@@ -1,0 +1,214 @@
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 9px;
+}
+nav li {
+    display: inline-block; /* Display list items in a horizontal line */
+    margin-right: 20px; /* Add space between list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff6f6; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 20px; /* Font size */
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Styling for hover effect */
+nav a:hover {
+    color: #c53028; /* Change text color on hover */
+}
+
+.striped-background {
+    background: repeating-linear-gradient(
+        45deg, /* Angle of the stripes */
+        #0c0547, /* Stripe color 1 */
+        #000000 5px, /* Width of stripe 1 */
+        #000000 10px, /* Stripe color 2 */
+        #000000 20px /* Width of stripe 2 */
+    );
+    height: 100%; /* Set the height to fill the viewport or container */
+    width: 100%; /* Set the width to fill the viewport or container */
+
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the container takes up the full viewport height */
+}
+
+/* Style the header with a cool font */
+.centered-header {
+    text-align: center;
+}
+
+.cool-font {
+    font-family:'Lato' serif; /* Replace 'YourCoolFont' with the name of your chosen font */
+    font-size: 120px; /* Adjust the font size as needed */
+    color: #ffffff; /* Text color */
+    font-weight: bolder;
+    
+}
+
+header p{
+    color: #fefefe;
+    font-size: 40px;
+    font-family: 'Comfortaa';
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    border: 4px dotted gold; /* Combined border property */
+    border-radius: 50%; /* Makes the image circular */
+    display: block; /* Ensures the border is displayed correctly */
+    margin: 0 auto; /* Center the image horizontally */
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-gap: 30px; /* Adjust as needed for spacing between events */
+    padding: 40px;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1450044804117-534ccd6e6a3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZlc3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+
+/* styles.css */
+
+/* Style each event section */
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+
+
+    
+    /* Gradient background */
+    background: linear-gradient(45deg, #160257, #ba066c); /* Adjust gradient colors */
+    background-size: 200% 200%; /* Control the size of the gradient */
+    animation: gradientAnimation 3s ease infinite; /* Add animation for a dynamic effect */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the event category label */
+.event-category {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent white background */
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the event details */
+.event-details {
+    flex-grow: 1;
+}
+
+/* Style the event title */
+.event h2 {
+    font-size: 35px;
+    color: #fff8f8;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Style the event description */
+.event p {
+    font-size: 15px;
+    color: #f4f8ec;
+    margin-bottom: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Style the registration button */
+.register-button {
+    background-color: #f5ecec;
+    color: rgb(0, 0, 0);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Cormorant Garamond';
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.register-button:hover {
+    background-color: gold;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align:left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 50px; /* Adjust the logo size */
+    border-radius: 50%;
+}
+
+.footer-info {
+    margin-left: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+/* Style social media icons if you add them */
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+}
+nav{
+    background-color: #000000;
+    
+}
+

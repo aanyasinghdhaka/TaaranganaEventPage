@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Event Registration</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Fourth Year</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="eventName">Event Name:</label>
+                <select id="eventName" name="eventName" required>
+                    <option value="Event 1">Dance Extravaganza</option>
+                    <option value="Event 2">Musical Melodies</option>
+                    <option value="Event 3">Artistic Expressions</option>
+                    <option value="Event 4">Comedy Night</option>
+                    <option value="Event 5">Tech Innovation Challenge</option>
+                    <option value="Event 6">Fashion Fusion</option>
+                    <option value="Event 7">Literary Symposium</option>
+                    <option value="Event 8">Food Fiesta</option>
+                    <!-- Add more event options here -->
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
