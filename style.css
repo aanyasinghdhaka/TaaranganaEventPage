@@ -17,6 +17,13 @@ nav a {
     font-family: 'Montserrat', sans-serif;
 
 }
+.logo img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.logo img:hover {
+    transform: rotateY(180deg);
+}
 
 /* Styling for hover effect */
 nav a:hover {
