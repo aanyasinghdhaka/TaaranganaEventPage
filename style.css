@@ -253,3 +253,14 @@ nav{
     background: #585555; /* Color of the scrollbar track on hover */
   }
 
+
+footer {
+    text-decoration: none;
+    color: #fefefe;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer a{
+    color: #fefefe;
+    text-decoration: none;
+}
+
